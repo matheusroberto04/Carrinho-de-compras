@@ -1,6 +1,29 @@
 let totalGeral;
 limpar();
 
+// Mapeamento  imagem
+const imagensProdutos = {
+    "JBL Wave Buds": "./assets/imagens/produtos/jbl.webp",
+    "Samsung S25": "./assets/imagens/produtos/s25.webp", 
+    "Meta Quest": "./assets/imagens/produtos/metaquest.webp",
+    "PS5": "./assets/imagens/produtos/ps5.webp",
+    "Xbox Series X Preto": "./assets/imagens/produtos/console.webp",
+    "Controle Dualsense Branco": "./assets/imagens/produtos/ControleDualsense.jpg",
+    "Controle Xbox Series X Preto": "./assets/imagens/produtos/xboxcontrole.webp"
+};
+
+// Criar imagem de pré-visualização abaixo do select
+const imgPreview = document.createElement("img");
+imgPreview.style.width = "100px";
+imgPreview.style.marginTop = "10px";
+document.querySelector(".formulario").insertBefore(imgPreview, document.querySelector(".parte-inferior"));
+
+// Atualizar imagem ao trocar produto
+document.getElementById("produto").addEventListener("change", () => {
+    let produto = document.getElementById("produto").value;
+    let nomeProduto = produto.split('-')[0].trim();
+    imgPreview.src = imagensProdutos[nomeProduto] || "";
+});
 
 function adicionar() {
     let produto = document.getElementById('produto').value;

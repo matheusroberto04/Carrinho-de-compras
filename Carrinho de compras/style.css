@@ -8,10 +8,10 @@ body {
   min-height: 100vh;
   height: auto;
   background: linear-gradient(to bottom,
-      #01080E 10%,
-      #FFF 10%,
-      #FFF 90%,
-      #01080E 90%);
+      #20bb0c 10%,
+      #20bb0c 10%,
+      #5e9261 90%,
+      #5e9261 90%);
   padding: 7vh 8vw 5vh;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -38,7 +38,7 @@ input[type="number"] {
 }
 
 .texto-medio-azul {
-  color: var(--Light-Blue, #1875E8);
+  color: var(--Light-Blue, #19eb11);
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
@@ -46,7 +46,7 @@ input[type="number"] {
 }
 
 .conteudo-principal {
-  filter: drop-shadow(0px 0px 70px rgba(2, 189, 255, 0.40));
+  filter: drop-shadow(0px 0px 70px rgba(33, 181, 235, 0.4));
   min-height: 100%;
   padding: 5rem 6.5rem;
   
@@ -54,7 +54,7 @@ input[type="number"] {
   grid-template-columns: 1.375fr 1fr;
   column-gap: 5rem;
 
-  background: white url('./assets/oculos.png') no-repeat bottom left;
+  background: rgb(255, 255, 255) url('./assets/oculos.png') no-repeat bottom left;
   background-size: auto 40%;
 
   position: relative;
@@ -79,7 +79,7 @@ input[type="number"] {
 }
 
 .texto-azul {
-  color: #1875E8;
+  color: #01ff23;
 }
 
 .formulario {
@@ -101,9 +101,9 @@ input[type="number"] {
   height: 3.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--Light-Blue, #1875E8);
+  border: 1px solid var(--Light-Blue, #29fa0d);
 
-  color: var(--Void, #01080E);
+  color: var(--Void, #0a0a0a);
   font-family: Inter;
   font-size: 1.3125rem;
   font-style: italic;
@@ -121,7 +121,7 @@ input[type="number"] {
   align-items: center;
   gap: 0.625rem;
   border-radius: 0rem 0.5rem 0.5rem 0rem;
-  border: 1px solid var(--Light-Blue, #1875E8);
+  border: 1px solid var(--Light-Blue, #18e818);
   cursor: pointer;
 }
 
@@ -137,9 +137,9 @@ input[type="number"] {
   padding: 1rem;
   width: 4.5rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--Light-Blue, #1875E8);
+  border: 1px solid var(--Light-Blue, #15e626);
 
-  color: var(--Void, #01080E);
+  color: var(--Void, #2bf008);
   font-family: Inter;
   font-size: 1.3125rem;
   font-style: italic;
@@ -167,8 +167,8 @@ input[type="number"] {
 }
 
 .botao-adicionar {
-  background: var(--Light-Blue, #1875E8);
-  box-shadow: 0px 0px 20px 0px rgba(24, 117, 232, 0.50);
+  background: var(--Light-Blue, #17f303);
+  box-shadow: 0px 0px 20px 0px rgba(59, 232, 24, 0.5);
 
   color: var(--Branco, #FFF);
   font-size: 1.5rem;
@@ -178,8 +178,8 @@ input[type="number"] {
 
 .botao-limpar {
   border-radius: 1rem;
-  background: var(--Void, #01080E);
-  box-shadow: 0px 0px 20px 0px rgba(1, 8, 14, 0.50);
+  background: var(--Void, #f80707);
+  box-shadow: 0px 0px 20px 0px rgba(255, 12, 12, 0.5);
 
   color: var(--Branco, #FFF);
   font-size: 1.5rem;
@@ -202,7 +202,7 @@ input[type="number"] {
 }
 
 .carrinho__titulo {
-  color: var(--Light-Blue, #1875E8);
+  color: var(--Light-Blue, #64e818);
   font-family: Inter;
   font-size: 1.5rem;
   font-style: normal;
@@ -227,7 +227,7 @@ input[type="number"] {
 .divisoria {
   width: 24rem;
   height: 0.0625rem;
-  background: #000;
+  background: #1cf509;
 }
 
 .carrinho__total {
